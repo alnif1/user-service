@@ -3,14 +3,14 @@ pipeline {
 
     environment {
         DOCKERHUB_USER = "your_dockerhub_username"  #this is docker hub user#
-        IMAGE_NAME = "user-service"
+        IMAGE_NAME = "user-service"   #this image docker
     }
 
     stages {
 
         stage('Checkout') {
             steps {
-                git branch: 'main', url: 'https://github.com/your/repo.git'
+                git branch: 'main', url: 'https://github.com/your/repo.git'   #the url of repo
             }
         }
 
