@@ -28,7 +28,7 @@ pipeline {
             }
         }
 
-        stage('Docker Push') {
+        stage('Docker Push') {   #the push image on dockerhub
             steps {
                 script {
                     sh "docker login -u $DOCKERHUB_USER -p $DOCKERHUB_TOKEN"
